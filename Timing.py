@@ -35,13 +35,16 @@ class Timer(object):
     print "unset:", timeit(self.timeUnset, number=1000), "seconds"
 
   def timeSet(self):
-    self.db.set(self.alpha[randint(0, 25)], randint(0, 100))
+    x = self.alpha[randint(0, 25)] + self.alpha[randint(0, 25)] + self.alpha[randint(0, 25)]
+    self.db.set(x, randint(0, 100))
   
   def timeGet(self):
-    self.db.get(self.alpha[randint(0, 25)])
+    x = self.alpha[randint(0, 25)] + self.alpha[randint(0, 25)] + self.alpha[randint(0, 25)]
+    self.db.get(x)
   
   def timeNumEqual(self):
     self.db.numequal(randint(0, 100))
   
   def timeUnset(self):
-    self.db.unset(self.alpha[randint(0, 25)])
+    x = self.alpha[randint(0, 25)] + self.alpha[randint(0, 25)] + self.alpha[randint(0, 25)]
+    self.db.unset(x)
