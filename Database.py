@@ -73,7 +73,12 @@ class BlockHolder(object):
 
 
 if __name__ == '__main__':
-  db = TreeDB()
-  bh = BlockHolder('tree')
+  # db = TreeDB()
+  # bh = BlockHolder('tree')
+  # while bh.run():
+  #   pass
+
+  db = HashDB()
+  bh = BlockHolder('hash')
   while bh.run():
     pass
