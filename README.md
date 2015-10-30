@@ -12,6 +12,7 @@ Dependencies:
             - Should be available by default with a standard python distribution
 
 Files:
+
     - Database.py:  
             - Main file to be run from the command line
             - Runs hash table by default: update __name__ == 'main' to run binary tree 
