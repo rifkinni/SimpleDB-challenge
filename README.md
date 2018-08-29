@@ -1,4 +1,7 @@
 # SimpleDB-challenge
+
+Solution to the simple db challenge outlined here: https://github.com/praxxis/simpledb-challenge
+
 Dependencies: 
     
     python3 -
